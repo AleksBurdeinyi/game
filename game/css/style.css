@@ -1,0 +1,146 @@
+body {
+    background-image: url('../img/farm.webp');
+    height: 100%;
+   overflow: hidden;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+
+
+  
+  .curved-text {
+   
+    position: relative;
+    width: 400px;
+    height: 100px;
+    font-family: Arial, sans-serif;
+    
+    text-align: center;
+    margin: auto 45%;
+    transform: rotate(6deg);
+    color: bisque;
+    font-size: 70px;
+  }
+  
+  .curved-text span {
+    position: absolute;
+    bottom: 0;
+    transform-origin: bottom center;
+    text-shadow: 0 0 10px #777d15;
+               
+  }
+  
+  /* Прикладне розташування для кожної літери */
+  .curved-text span:nth-child(1) { left: -116px; transform: rotate(300deg); bottom: -118px;}
+ 
+  .curved-text span:nth-child(2) { left: -83px;transform: rotate(316deg); bottom: -77px;}
+  .curved-text span:nth-child(3) { left: -47px; transform: rotate(320deg); bottom: -43px;}
+  .curved-text span:nth-child(4) { left: -1px; transform: rotate(329deg); bottom: -17px;}
+  .curved-text span:nth-child(5) { left: 43px; transform: rotate(355deg); bottom: -12px;}
+  .curved-text span:nth-child(6) { left: 108px; transform: rotate(5deg); bottom: -13px;}
+  .curved-text span:nth-child(7) { left: 157px; transform: rotate(31deg); bottom: -19px;}
+  .curved-text span:nth-child(8) { left: 203px; transform: rotate(42deg); bottom: -41px;}
+  .curved-text span:nth-child(9) { left: 231px; transform: rotate(52deg); bottom: -77px;}
+ 
+
+img{
+    clip-path:circle() ;
+    height: 25vh;
+    
+    
+}
+.chiken{
+    text-align: center;
+    animation: spin 6s linear infinite;
+}
+input{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    border-radius: 20px;
+    background-color: #9885306b;
+    font-size: 3vh;
+    color: #ffb200;
+    text-align: center;
+}
+/* #but{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 2vh;
+    color: #342f0b;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #e5e7dd6b;
+} */
+/* #save{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 10px;
+    color: #342f0b;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #e5e7dd6b;
+
+} */
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+h2{
+    text-shadow: 0 0 10px #777d15;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #38250f;
+    font-size: 40px;
+}
+#silent{
+    height: 4vh;
+    position: absolute;
+    right: 10%;
+    top: 5%;
+}
+#silent:hover{
+   background-color: #ffb200;
+    cursor: pointer;
+}
+.box_menu{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 70%;
+    left: 50%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    cursor: pointer;
+}
+.box_menu button{
+    border-radius: 18px;
+    font-size: 2vh;
+    background-color: #03A9F4;
+    color: #2e235780;
+    padding: 6px;
+    margin-top: 10%;
+   
+}
+.all_element{
+    text-align: center;
+    height: 70%;
+}
+  
+
