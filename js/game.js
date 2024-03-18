@@ -280,10 +280,10 @@ document.getElementById("playAgainButton").addEventListener("click", function() 
 });
 
 document.getElementById("mainMenuButton").addEventListener("click", function() {
-    window.location.href = 'http://127.0.0.1:5500/game/welcome.html'; // Перехід на  головне меню
+    window.location.href = 'http://127.0.0.1:5500/game/index.html'; // Перехід на  головне меню
 });
 document.getElementById("goMenubutton").addEventListener("click", function() {
-    window.location.href = 'http://127.0.0.1:5500/game/welcome.html'; // Перехід на  головне меню
+    window.location.href = 'http://127.0.0.1:5500/game/index.html'; // Перехід на  головне меню
 });
 
 
