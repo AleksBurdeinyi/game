@@ -1,0 +1,59 @@
+body {
+    background-image: url('../img/hay-day.webp');
+    height: 100%;
+   overflow: hidden;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+  
+}
+img{
+    clip-path:circle() ;
+    height: 25vh;
+
+    
+    
+}
+.chiken{
+    text-align: center;
+    animation: spin 6s linear infinite;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 10%;
+
+}
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+#count{
+    text-align: center;
+    color: #feed0d;
+    font-size: 3rem;
+}
+#preload_line{
+    display: flex;
+    justify-content: center;
+}
+#inside_line{
+    background-color: #5d1111;
+    height: 20px;
+    border-radius: 20px;
+    width: 0%;
+}
+
+.line {
+    background-color: #ffcd00;
+    width: 35%;
+    height: 20px;
+    border-radius: 20px;
+    border: 7px solid #905d29;
+}
+
+

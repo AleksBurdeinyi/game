@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/game.css">
+    <script defer src="js/game.js"></script>
+</head>
+<body>
+    <div id="user">Hello</div>
+    <div class="ressource">
+        <div class="money">
+            <span id="coin">100</span><img id="coinImg"  src="img/coin.jpg" alt="coin">
+        </div>
+      
+        <div class="animal">
+            <span id="animal">Animal:</span>
+            <span id="alive">Alive:</span>
+            <span id="dead">Dead:</span>
+            <button id="buy">BUY</button>
+        </div>
+    </div>
+    <div class="areagame">
+   
+
+    </div>
+    <audio id="audw"  loop style="display: none;" src="audio/wolfSound.mp3"></audio>
+    
+<div id="nextLevelBlock" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 100; background-color: #cbcc0e; padding: 20px; border: 2px solid #931616; border-radius: 10px;">
+    <p>Ви перемогли всіх вовків!</p>
+    <button id="nextLevelButton" >Перейти на наступний рівень</button>
+    <button id="retryButton" >Спробувати знову</button>
+    <button id="mainMenuButton" >Перейти в головне меню</button>
+</div>
+<div id="wolvesWinBlock" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 100; background-color: #cbcc0e; padding: 20px; border: 2px solid #931616; border-radius: 10px;">
+    <p>Вовки перемогли!</p>
+    <button id="playAgainButton" >Грати знову</button>
+    
+    <button id="goMenubutton" >Перейти в головне меню</button>
+</div>
+
+
+</body>
+</html>
