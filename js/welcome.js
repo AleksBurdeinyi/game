@@ -1,30 +1,42 @@
-const myButton=document.getElementById("but");
-// кнопка для фокус на поле ввода 
- const myCallback=(e)=>{
-    if(e.target===myButton){
-        document.getElementsByClassName("input")[0].focus();
-    }
 
- }
- document.addEventListener("click",myCallback);
+document.addEventListener('DOMContentLoaded', function() {
+    const input = document.querySelector('.input');
+    const saveButton = document.getElementById('save');
+    const changeNameButton = document.getElementById('but');
+    const startButton = document.getElementById('start');
+    
+   
 
+    saveButton.addEventListener('click', function() {
+        const name = input.value.trim();
+        if (name) {
+            localStorage.setItem('name', name);
+            alert(`Ім'я ${name} збережено!`);
+            input.value = ''; // Очищаємо поле вводу
+        } else {
+            alert('Будь ласка, введіть своє ім\'я перед збереженням.');
+        }
+    });
 
+    changeNameButton.addEventListener('click', function() {
+        input.value = localStorage.getItem('name') || '';
+        input.focus(); 
+    });
 
-// кнопка для сохр user і потом передати для вітаняя user після того як сохранили очищуємо поле
- const saveBut = document.getElementById("save");
- const myInp =document.getElementsByClassName("input")[0];
- let user ="";
- const saveButton =(e)=>{
-    if(e.target===saveBut){
-        
-        user+=`${myInp.value}`
-        myInp.value="";
+    startButton.addEventListener('click', function() {
+        const name = localStorage.getItem('name');
+        if (name) {
+            alert(`Вітаємо, ${name}! Гра розпочинається.`);
+            window.open("load.html");
+            
+        } else {
+            alert('Будь ласка, збережіть своє ім\'я перед стартом гри.');
+        }
+    });
 
+    
+});
 
-
-    }
- }
- document.addEventListener("click",saveButton);
  const volumeSilent = document.getElementById("silent");
 const audio = document.getElementById("audio");
 
@@ -44,11 +56,3 @@ const audio = document.getElementById("audio");
 }
  volumeSilent.addEventListener("click",silentCallback);
 
-// кнопка для start(відкриває файл game)
-const starGame = document.getElementById("start");
-const openCallback =(e)=>{
-    if(e.target===starGame){
-        window.open("game.html");
-    }
-}
-document.addEventListener("click",openCallback);
