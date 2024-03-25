@@ -71,4 +71,8 @@ body {
     pointer-events: none;
     transform: translateX(-50%) rotate(45deg);
 }
+ #user{
+    color: #03A9F4;
+    font-size: 2rem;
+}
 
