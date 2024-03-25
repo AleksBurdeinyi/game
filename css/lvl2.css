@@ -1,0 +1,74 @@
+body {
+    background-image: url('../img/farm_lvl2.jpg');
+    height: 100%;
+   overflow: hidden;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   
+  
+}
+.areagame{
+    height: 35vh;
+    width: 85vw;
+    margin: 2% auto;
+    position: relative;
+    margin-top:20%
+}
+#coinImg{
+    clip-path: circle(25% at 50% 50%);
+    height: 130px;
+    vertical-align: middle;
+}
+#coin{
+    font-size: 2rem;
+    color: gold;
+}
+.animal{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    
+}
+.animal span{
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+.animal span:nth-child(1) { color:aqua}
+.animal span:nth-child(2) { color:greenyellow}
+.animal span:nth-child(3) { color:orangered}
+.buy{
+    width: 30%;
+    border-radius: 20px;
+    background-color: #FFC107;
+    margin-top: 5%;
+}
+.ressource{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+#buy{
+    width: 30%;
+    margin-top: 5%;
+    border-radius: 20px;
+    background-color: #ffbb00;
+
+}
+.rotated {
+    transform: rotate(45deg);
+}
+
+.swordImg {
+    position: fixed;
+    bottom: 1px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 999;
+    width: 300px; 
+    height: 300px; 
+    pointer-events: none;
+    transform: translateX(-50%) rotate(45deg);
+}
+
