@@ -294,6 +294,9 @@ document.addEventListener('click', function () {
         backgroundMusic.play();
     }
 });
-document.getElementsByClassName("goMenubutton")[0].addEventListener("click", function() {
-    window.location.href = '/game/welcome.html'; // Перехід на  головне меню
+document.getElementById("mainMenuButton").addEventListener("click", function() {
+    window.location.href = 'http://127.0.0.1:5500/game/welcome.html'; // Перехід на  головне меню
+});
+document.getElementById("goMenubutton").addEventListener("click", function() {
+    window.location.href = 'http://127.0.0.1:5500/game/welcome.html'; // Перехід на  головне меню
 });
