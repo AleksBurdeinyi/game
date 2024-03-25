@@ -300,3 +300,7 @@ document.getElementById("mainMenuButton").addEventListener("click", function() {
 document.getElementById("goMenubutton").addEventListener("click", function() {
     window.location.href = '/game/welcome.html'; // Перехід на  головне меню
 });
+//дані user
+let user = localStorage.getItem('name');
+let userBox = document.getElementById("user");
+userBox.textContent=`${userBox.textContent} :${user} `;
