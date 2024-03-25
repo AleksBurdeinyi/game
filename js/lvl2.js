@@ -298,7 +298,7 @@ document.getElementById("mainMenuButton").addEventListener("click", function() {
     window.location.href = '/game/welcome.html'; // Перехід на  головне меню
 });
 document.getElementById("goMenubutton").addEventListener("click", function() {
-    window.location.href = '/game/welcome.html'; // Перехід на  головне меню
+    window.location.href = '/game/index.html'; // Перехід на  головне меню
 });
 //дані user
 let user = localStorage.getItem('name');
