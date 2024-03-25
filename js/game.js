@@ -279,7 +279,8 @@ document.getElementById("playAgainButton").addEventListener("click", function() 
     location.reload(); // Перезавантаження сторінки для нової гри
 });
 document.getElementById("nextLevelButton").addEventListener("click",function(){
-    window.location.href = 'http://127.0.0.1:5500/game/lvl2.html';
+   window.location.href = '/game/lvl2.html';
+
 });
 
 document.getElementById("mainMenuButton").addEventListener("click", function() {
